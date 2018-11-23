@@ -10,14 +10,12 @@ module.exports = function (options) {
     //To DO: add the pattern functions and describe the logic inside the function
 
     function productURL(args, done){
-	if(args.product_url){
-            var productURL = args.product_url;
-            done(null, {result: productURL});
+	for(ver i = 0; i < mockData.length; i++){
+		if(mockData[i].product_id == args){
+			done(null, {result: mockData[i].product_url});
+		}
 	}
-	else{
-	    done(null, {result: 'dummyURL'});
-	}
-
+	done(null, {result: 'dummyURL'});
     }
 
 	function productName(args, done){
