@@ -2,7 +2,7 @@ version: '3'
 services:
   server:
     build: ./server
-    image: HUB_ID/microservice:server
+    image: cloud11/microservice:server
     ports:
       - "8080:8080"
     depends_on:

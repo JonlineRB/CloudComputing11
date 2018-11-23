@@ -8,18 +8,19 @@ module.exports = function (options) {
 
 
     //To DO: add the pattern functions and describe the logic inside the function
-	function getProductURL(args, done){
-		if(args.product_url){
-			var productURL = args.product_url;
-			done(null, {result: productURL});
-		}
-		else{
-			done(null, {result: ''});
-		}
 
+    function productURL(args, done){
+	if(args.product_url){
+            var productURL = args.product_url;
+            done(null, {result: productURL});
+	}
+	else{
+	    done(null, {result: ''});
 	}
 
-	function getProductName(args, done){
+    }
+
+	function productName(args, done){
 		if(args.product_name){
 			var productName = args.product_name;
 			done(null, {result: productName});
