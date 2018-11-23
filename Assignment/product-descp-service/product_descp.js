@@ -15,7 +15,7 @@ module.exports = function (options) {
             done(null, {result: productURL});
 	}
 	else{
-	    done(null, {result: ''});
+	    done(null, {result: 'dummyURL'});
 	}
 
     }
