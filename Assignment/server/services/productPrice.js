@@ -22,7 +22,7 @@ const getProductPrice = (productId) => {
     /**
      * To DO: Write act Method
      */
-	return act(Object.assign({}, PRODUCT_PRICE, { price }));
+	return act(Object.assign({}, PRODUCT_PRICE, { productId }));
 };
 module.exports = {
     getProductPrice
