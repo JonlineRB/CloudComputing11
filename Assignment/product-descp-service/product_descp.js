@@ -22,7 +22,7 @@ module.exports = function (options) {
 			done(null, {result: productName});
 		}
 		else{
-			done(null, {result: args});
+			done(null, {result: args['productId']});
 		}
 
 	}
