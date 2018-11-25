@@ -12,8 +12,14 @@ module.exports = function (options) {
     function productURL(args, done){
 	//var parsed = JSON.parse(mockData[0]);
 	//done(null, {result: parsed.product_url});
-	done(null, {result: mockData[0]['product_url']});
-	//for(var i = 0; i < mockData.length ; i++){}
+	var productId = args['productId']
+	//done(null, {result: mockData[0]['product_url']});
+	for(var i = 0; i < mockData.length ; i++){
+		if(mockData[i]['product_id'] == productId){
+			done(null, {result: mockData[i]['product_url']});
+		}
+	}
+	done(null, {result: ''});
     }
 
 	function productName(args, done){
