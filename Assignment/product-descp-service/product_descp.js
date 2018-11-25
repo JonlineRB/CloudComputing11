@@ -10,8 +10,7 @@ module.exports = function (options) {
     //To DO: add the pattern functions and describe the logic inside the function
 
     function productURL(args, done){
-	
-	done(null, {result: 'dummyURL'});
+	done(null, {result: mockData[0]});
     }
 
 	function productName(args, done){
