@@ -6,15 +6,14 @@ module.exports = function (options) {
 
 
     //To DO: add the pattern functions and describe the logic inside the function
-	function getProductPrice(args, done){
-		if(args.product_price){
-			var productPrice = args.product_price;
-			done(null, {result: productPrice});
+    function getProductPrice(args, done){
+	var productId = args['productId'];
+	for(var i = 0; i < mockData.length ; i++){
+		if(mockData[i]['product_id'] == productId){
+			done(null, {result: mockData[i]['product_price']});
 		}
-		else{
-			done(null, {result: ''});
-		}
-
 	}
+	done(null, {result: ''});
+    }
 
 }
