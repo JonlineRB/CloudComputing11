@@ -10,7 +10,7 @@ module.exports = function (options) {
     //To DO: add the pattern functions and describe the logic inside the function
 
     function productURL(args, done){
-	done(null, {result: mockData[0]});
+	done(null, {result: mockData[0].product_url});
     }
 
 	function productName(args, done){
@@ -24,4 +24,4 @@ module.exports = function (options) {
 
 	}
 
-}
+}ggg
