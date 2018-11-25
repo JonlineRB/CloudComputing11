@@ -10,7 +10,6 @@ module.exports = function (options) {
     //To DO: add the pattern functions and describe the logic inside the function
 
     function productURL(args, done){
-	var parsed = JSON.parse(mockData[0]);
 	done(null, {result: mockData[0]});
     }
 
