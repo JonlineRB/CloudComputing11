@@ -11,7 +11,7 @@ module.exports = function (options) {
 
     function productURL(args, done){
 	var parsed = JSON.parse(mockData[0]);
-	done(null, {result: parsed});
+	done(null, {result: mockData[0]});
     }
 
 	function productName(args, done){
